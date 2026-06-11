@@ -28,18 +28,6 @@ layout: default
   
   {{ content }}
 
-  <!-- Featured Projects Section -->
-  <section class="featured-projects">
-    <h2 class="post-list-heading">Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>🤖 Modeldle</h3>
-        <p>A daily Wordle-like guessing game for machine learning models. Guess the daily model and see how many attributes match!</p>
-        <a href="{{ '/modeldle/' | relative_url }}" class="project-link">Play Modeldle →</a>
-      </div>
-    </div>
-  </section>
-
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
